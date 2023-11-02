@@ -1,0 +1,42 @@
+<div class="container ">
+    <br>
+    <div class="row d-grid gap-2 col-12 ">
+        <div *ngFor="let product of products; let productId = index" class="col">
+            <a [routerLink]="[ productId ]">
+                <div class="card">
+                    <div class="card-body d-grid gap-2 col-12 mx-auto">
+                        <h5 class="card-title"><button type="button" class="btn btn-primary ">{{ product.name }}</button></h5>
+                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-text"><small class="text-muted">{{ product.aeg }}</small></p>
+                    </div>
+                    <img src="{{ product.img }}" class="card-img-bottom" alt="...">
+                </div>
+            </a>
+        </div>
+        <!-- <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><button type="button" class="btn btn-secondary btn-sm">...............Food Labeling (食品表示)............</button></h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="./assets/img/IMG_0965.JPG" class="card-img-bottom" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><button type="button" class="btn btn-success btn-sm">Material Database (材料データベース)</button></h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="./assets/img/IMG_6133.JPG" class="card-img-bottom" alt="...">
+            </div> 
+        </div>
+    </div> -->
+</div>
+
+
+
+
+
